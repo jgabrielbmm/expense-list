@@ -1,0 +1,27 @@
+.card-container{
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  padding: .5em;
+  justify-content: space-between;
+  width: 600px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 5px 5px #aaa;
+}
+
+.date-title{
+  display: flex;
+  align-items: center;
+}
+
+.date-title h4{
+  margin-left: 20px;
+  font-size: 1.5em;
+}
+
+.card-container p {
+  text-align: center;
+  font-size: 20px;
+  margin-right: 15px;
+}

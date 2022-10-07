@@ -1,0 +1,32 @@
+.Register-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  background-color: #c0c0c0;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.Register-container label {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.Register-container label span {
+  text-align: left;
+  margin: 7px 0;
+  font-size: 18px;
+}
+
+.Register-container label input{
+  padding: .3em;
+  border: 1px solid #000;
+}
+
+.Register-container label input:focus{
+  outline: none;
+  border: 1px solid rgb(45, 250, 45);
+}

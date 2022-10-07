@@ -1,0 +1,12 @@
+.NE-container {
+  border: 1px solid #000;
+  background-color: #c0c0c0;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.sub-title{
+  margin: .6em 0;
+}
+
+

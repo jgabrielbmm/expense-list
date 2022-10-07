@@ -1,0 +1,11 @@
+.header-container{
+  margin: 0 auto;
+  padding: .6em;
+  text-align: center;
+}
+
+.header-container h1 {
+  margin: .5em 0;
+  font-size: 3em;
+  color: #fff;
+}
