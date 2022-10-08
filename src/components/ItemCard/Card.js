@@ -22,7 +22,7 @@ const Card = ({ itemList, filteredYear }) => {
 
   return (
     <div>
-      {itemList.length > 0 &&
+      {filteredList.length > 0 &&
         filteredList.map((item) => (
           <div className="card-container" key={item.id}>
             <div className="date-title">
@@ -32,6 +32,9 @@ const Card = ({ itemList, filteredYear }) => {
             <p>R$ {item.price}</p>
           </div>
         ))}
+      {filteredList.length === 0 && (
+        <p className="no-expense">Nenhum gasto encontrado</p>
+      )}
     </div>
   );
 };
