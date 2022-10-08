@@ -3,7 +3,7 @@ import React, { useState } from "react";
 // CSS
 import "./Register.css";
 
-const Register = ({ itemList, setItemList, setRegisterExpense }) => {
+const Register = ({ setItemList }) => {
   const [title, setTitle] = useState("");
   const [price, setPrice] = useState("");
   const [date, setDate] = useState("");
@@ -18,11 +18,12 @@ const Register = ({ itemList, setItemList, setRegisterExpense }) => {
       date: date,
     };
 
-    setItemList([...itemList, newItem]);
+    setItemList((prevExpenses) => {
+      return [...prevExpenses, newItem];
+    });
     setTitle("");
     setPrice("");
     setDate("");
-    setRegisterExpense(false);
   };
 
   return (

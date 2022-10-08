@@ -15,7 +15,7 @@ const Expenses = ({ itemList }) => {
         filteredYear={filteredYear}
         setFilteredYear={setFilteredYear}
       />
-      <Card itemList={itemList} />
+      <Card itemList={itemList} filteredYear={filteredYear} />
     </div>
   );
 };

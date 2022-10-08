@@ -15,13 +15,7 @@ const Header = ({ itemList, setItemList }) => {
       {!registerExpense && (
         <NewExpense setRegisterExpense={setRegisterExpense} />
       )}
-      {registerExpense && (
-        <Register
-          itemList={itemList}
-          setItemList={setItemList}
-          setRegisterExpense={setRegisterExpense}
-        />
-      )}
+      {registerExpense && <Register setItemList={setItemList} />}
     </header>
   );
 };
